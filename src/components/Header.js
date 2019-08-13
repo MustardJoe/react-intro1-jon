@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function header() {
-  const headerMsg = 'Come to the Party Today';
+export default function header({ name }) {
+  const headerMsg = 'Dont Come to the Party Today, ';
 
   return (
-    <h1>{headerMsg}</h1>
+    <h1>{headerMsg} {name}</h1>
   );
 }
