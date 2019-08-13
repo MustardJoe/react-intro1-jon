@@ -1,22 +1,22 @@
 import React from 'react';
 
-export default function Cat() {
-  const cat = {
-    name: 'Morris',
-    age: 'unk - 16?',
-    weight: '26 lbs'
-  };
+export default function Cat({ name, age, weight }) {
+  // const cat = {
+  //   name: 'Morris',
+  //   age: 'unk - 16?',
+  //   weight: '26 lbs'
+  // };
 
   return (
     <dl>
       <dt>Name</dt>
-      <dd>{cat.name}</dd>
+      <dd>{name}</dd>
 
       <dt>Age</dt>
-      <dd>{cat.age}</dd>
+      <dd>{age}</dd>
 
       <dt>weight</dt>
-      <dd>{cat.weight}</dd>
+      <dd>{weight}</dd>
     </dl>
   );
 }
