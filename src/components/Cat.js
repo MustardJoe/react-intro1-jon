@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function Cat({ name, age, weight }) {
+function Cat({ name, age, weight }) {
   // const cat = {
   //   name: 'Morris',
   //   age: 'unk - 16?',
@@ -20,4 +21,12 @@ export default function Cat({ name, age, weight }) {
     </dl>
   );
 }
+
+Cat.propTypes = {
+  name: PropTypes.string.isRequired,
+  age: PropTypes.string.isRequired,
+  weight: PropTypes.string.isRequired
+};
+
+export default Cat;
 
