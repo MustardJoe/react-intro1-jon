@@ -2,6 +2,7 @@ import React from 'react';
 import Cat from './Cat';
 import Header from './Header';
 import ColorPicker from './ColorPicker';
+import Footer from './Footer';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <ColorPicker />
       <Cat name="Butter" age="9" weight="14lbs" />
       <Cat name="Paddington" age="4 or 5" weight="16lbs" />
+      <Footer footerMsg="Stoopy" />
 
     </>
   );
