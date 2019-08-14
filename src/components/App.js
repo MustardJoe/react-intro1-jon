@@ -3,6 +3,7 @@ import Cat from './Cat';
 import Header from './Header';
 import ColorPicker from './ColorPicker';
 import Footer from './Footer';
+import Button from './Button';
 
 export default function App() {
   return (
@@ -12,11 +13,11 @@ export default function App() {
       <Cat name="Morris" age="unknown but maybe 16" weight="26lbs" />
       <ColorPicker />
       <Cat name="Butter" age="9" weight="14lbs" />
+      <Button buttonProp="good for you" />
       <Cat name="Paddington" age="4 or 5" weight="16lbs" />
       <Footer footerMsg="Stoopy" />
 
     </>
   );
-
 }
   
