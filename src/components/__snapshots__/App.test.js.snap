@@ -19,10 +19,16 @@ exports[`App component renders App 1`] = `
     name="Butter"
     weight="14lbs"
   />
+  <Button
+    buttonProp="good for you"
+  />
   <Cat
     age="4 or 5"
     name="Paddington"
     weight="16lbs"
+  />
+  <Footer
+    footerMsg="Stoopy"
   />
 </Fragment>
 `;
