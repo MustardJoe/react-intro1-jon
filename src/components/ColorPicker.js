@@ -3,6 +3,7 @@ import styles from './ColorPicker.css';
 
 function ColorPicker() {
   const redHandler = () => {
+    /* eslint-disable no-console */
     console.log('red');
   };
 
