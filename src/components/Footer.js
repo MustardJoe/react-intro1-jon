@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 //   );
 
 class Footer extends Component {
-  static PropTypes = {
+  static propTypes = {
     footerMsg: PropTypes.string.isRequired,
   }
   render() {
