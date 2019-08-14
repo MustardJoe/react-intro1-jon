@@ -1,17 +1,25 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-// export default function header({ name }) {
-//   const headerMsg = 'Dont Come to the Party Today, ';
+// export default function footer({ footerMsg }) {
+//   const footerContents = 'Dont Come to the Party Today, ';
 
 //   return (
-//     <h1>{headerMsg} {name}</h1>
+//     <h1>{footerContents} {footerMsg}</h1>
 //   );
 
 class Footer extends Component {
+  static PropTypes = {
+    footerMsg: PropTypes.string.isRequired,
+  }
   render() {
     return (
-
-    )
+      <>
+        <footer>
+          Welcome your own doom, {this.props.footerMsg}
+        </footer>
+      </>
+    );
   }
 }
 
