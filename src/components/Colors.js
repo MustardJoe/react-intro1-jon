@@ -1,32 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Color from './Color';
 
-function Color({ name, hex }) {
-  const color = {
-    name,
-    hex
-  };
-  const fields = Object.keys(color)
-    .map(key => {
-      return (
-        <>
-          <dt>{key}</dt>
-          <dd style={{ color: hex }}></dd>
-        </>
-      );
-    });
-
+function Colors({ colors }) {
+  const colorList = colors.map(color => {
+    return (
+      <li key={color.name}>
+        <Color name={color.name} rgb={color.rgb} />
+      </li>
+    );
+  });
 
   return (
-    <dl>
-      {fields}
-    </dl>
+    <ul>
+      {colorList}
+    </ul>
   );
 }
 
-Color.propTypes = {
-  name: PropTypes.string.isRequired,
-  hex: PropTypes.string.isRequired,
+Colors.propTypes = {
+  colors: PropTypes.array.isRequired
 };
 
-export default Color;
+export default Colors;
