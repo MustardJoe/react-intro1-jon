@@ -5,6 +5,7 @@ exports[`App component renders App 1`] = `
   <header
     name="Rad Guy"
   />
+  <State />
   <h1>
     Hello World
   </h1>
@@ -12,6 +13,44 @@ exports[`App component renders App 1`] = `
     age="unknown but maybe 16"
     name="Morris"
     weight="26lbs"
+  />
+  <Colors
+    colors={
+      Array [
+        Object {
+          "name": "red",
+          "rgb": Object {
+            "blue": 0,
+            "green": 0,
+            "red": 255,
+          },
+        },
+        Object {
+          "name": "green",
+          "rgb": Object {
+            "blue": 0,
+            "green": 255,
+            "red": 0,
+          },
+        },
+        Object {
+          "name": "orange",
+          "rgb": Object {
+            "blue": 0,
+            "green": 165,
+            "red": 255,
+          },
+        },
+        Object {
+          "name": "hotpink",
+          "rgb": Object {
+            "blue": 180,
+            "green": 105,
+            "red": 255,
+          },
+        },
+      ]
+    }
   />
   <ColorPicker />
   <Cat
