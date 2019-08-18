@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It is the test for colors component creates a list of I think 5 maybe 4 4 or 5 colors 1`] = `
+<ul>
+  <li
+    key="red"
+  >
+    <Color
+      name="red"
+      rgb={
+        Object {
+          "blue": 0,
+          "green": 0,
+          "red": 255,
+        }
+      }
+    />
+  </li>
+  <li
+    key="green"
+  >
+    <Color
+      name="green"
+      rgb={
+        Object {
+          "blue": 0,
+          "green": 255,
+          "red": 0,
+        }
+      }
+    />
+  </li>
+  <li
+    key="orange"
+  >
+    <Color
+      name="orange"
+      rgb={
+        Object {
+          "blue": 0,
+          "green": 165,
+          "red": 255,
+        }
+      }
+    />
+  </li>
+  <li
+    key="hotpink"
+  >
+    <Color
+      name="hotpink"
+      rgb={
+        Object {
+          "blue": 180,
+          "green": 105,
+          "red": 255,
+        }
+      }
+    />
+  </li>
+</ul>
+`;

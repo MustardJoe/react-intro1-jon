@@ -7,6 +7,7 @@ import Footer from './Footer';
 import Button from './Button';
 import State from './State';
 import Colors from './Colors';
+import TextFormatter from './TextFormatter/TextFormatter';
 
 const colors = [
   { name: 'red', rgb: { red: 255, green: 0, blue: 0 } },
@@ -22,6 +23,7 @@ export default function App() {
       <State />
       <h1>Hello World</h1>
       <Cat name="Morris" age="unknown but maybe 16" weight="26lbs" />
+      <TextFormatter />
       <Colors colors={colors} />
       <ColorPicker />
       <Cat name="Butter" age="9" weight="14lbs" />
