@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function WaterForm({ number, handleNumChange, handleSubmit }) {
+function WaterForm({ numberOz, handleNumChange, handleSubmit }) {
 
   return (
     <form onSubmit={handleSubmit}>
+      <p>How much water?</p>
       <input 
         type="number" 
-        value={number} 
-        placeholder="how many Oz son?" 
+        value={numberOz} 
+        placeholder="0" 
         onChange={handleNumChange} 
       />
       <button className="formButton">Update Total</button>
@@ -17,7 +18,7 @@ function WaterForm({ number, handleNumChange, handleSubmit }) {
 }
 
 WaterForm.propTypes = {
-  number: PropTypes.number.isRequired,
+  numberOz: PropTypes.number.isRequired,
   handleNumChange: PropTypes.func.isRequired,
   handleSubmit: PropTypes.func.isRequired,
 };
